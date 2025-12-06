@@ -119,6 +119,7 @@ nav {
   min-height: calc(100vh - 100px);
   padding: 0 6%;
   gap: 3rem;
+  transform: translateY(-10%);
 }
 
 .hero-text {
@@ -154,6 +155,12 @@ nav {
   color: var(--text-gray);
   margin-bottom: 2rem;
   line-height: 1.5;
+}
+
+.highlight-text {
+  color: var(--primary-color);
+  font-weight: 600;
+  font-style: italic;
 }
 
 .hero-buttons {
@@ -223,87 +230,442 @@ nav {
   color: var(--text-gray);
 }
 
-/* ===== HERO VISUAL ELEMENTS ===== */
+/* ===== HERO VISUAL ELEMENTS - COMPLEX ICON ANIMATION ===== */
 .hero-visual {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   height: 500px;
+  transform: translateY(-5%);
 }
 
-.shape-container {
+.icon-animation-container {
   position: relative;
-  width: 400px;
-  height: 400px;
+  width: 500px;
+  height: 500px;
 }
 
-.floating-shape {
-  position: absolute;
-  border-radius: 50%;
-  background: var(--primary-color);
-  opacity: 0.1;
-  animation: float 6s ease-in-out infinite;
-}
-
-.shape-1 {
-  width: 200px;
-  height: 200px;
-  top: 40px;
-  left: 40px;
-}
-
-.shape-2 {
-  width: 150px;
-  height: 150px;
-  top: 130px;
-  left: 180px;
-}
-
-.shape-3 {
-  width: 100px;
-  height: 100px;
-  top: 220px;
-  left: 90px;
-}
-
-.profile-container {
+/* Central Hub */
+.central-hub {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+}
+
+.hub-core {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
   background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 15px 40px rgba(255, 235, 59, 0.3);
-  animation: pulse 4s ease-in-out infinite;
+  box-shadow: 0 0 40px rgba(255, 235, 59, 0.6);
+  z-index: 10;
+  animation: hubPulse 3s ease-in-out infinite;
 }
 
-.profile-icon {
-  font-size: 5rem;
+.hub-core i {
+  font-size: 2.5rem;
   color: var(--bg-dark);
+  animation: codeRotate 8s linear infinite;
 }
+
+.hub-ring {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid var(--primary-color);
+  border-radius: 50%;
+  opacity: 0.3;
+}
+
+.ring-1 {
+  width: 100px;
+  height: 100px;
+  animation: ringPulse 3s ease-in-out infinite;
+}
+
+.ring-2 {
+  width: 140px;
+  height: 140px;
+  animation: ringPulse 3s ease-in-out infinite 0.5s;
+}
+
+.ring-3 {
+  width: 180px;
+  height: 180px;
+  animation: ringPulse 3s ease-in-out infinite 1s;
+}
+
+/* Orbiting Tech Icons */
+.orbit-icon {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: var(--card-bg);
+  border: 2px solid var(--primary-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 5px 20px rgba(255, 235, 59, 0.3);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.orbit-icon i {
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  transition: all 0.3s ease;
+}
+
+.orbit-icon:hover {
+  transform: scale(1.2);
+  background: var(--primary-color);
+  box-shadow: 0 8px 30px rgba(255, 235, 59, 0.6);
+}
+
+.orbit-icon:hover i {
+  color: var(--bg-dark);
+  transform: rotateY(360deg);
+}
+
+/* Tooltip */
+.orbit-icon::before {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--primary-color);
+  color: var(--bg-dark);
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.orbit-icon:hover::before {
+  opacity: 1;
+}
+
+/* Icon Positions with Magnetic Bounce */
+.orbit-1 {
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: magneticBounce1 8s ease-in-out infinite;
+}
+
+.orbit-2 {
+  top: 20%;
+  right: 15%;
+  animation: magneticBounce2 8s ease-in-out infinite 1s;
+}
+
+.orbit-3 {
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+  animation: magneticBounce3 8s ease-in-out infinite 2s;
+}
+
+.orbit-4 {
+  bottom: 20%;
+  right: 15%;
+  animation: magneticBounce4 8s ease-in-out infinite 3s;
+}
+
+.orbit-5 {
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: magneticBounce5 8s ease-in-out infinite 4s;
+}
+
+.orbit-6 {
+  bottom: 20%;
+  left: 15%;
+  animation: magneticBounce6 8s ease-in-out infinite 5s;
+}
+
+.orbit-7 {
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  animation: magneticBounce7 8s ease-in-out infinite 6s;
+}
+
+.orbit-8 {
+  top: 20%;
+  left: 15%;
+  animation: magneticBounce8 8s ease-in-out infinite 7s;
+}
+
+/* Floating Particles */
+.particle {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: var(--primary-color);
+  border-radius: 50%;
+  opacity: 0.6;
+  animation: particleFloat 8s ease-in-out infinite;
+}
+
+.particle-1 {
+  top: 15%;
+  left: 25%;
+  animation-delay: 0s;
+}
+
+.particle-2 {
+  top: 30%;
+  right: 20%;
+  animation-delay: 1s;
+}
+
+.particle-3 {
+  bottom: 25%;
+  right: 30%;
+  animation-delay: 2s;
+}
+
+.particle-4 {
+  bottom: 15%;
+  left: 20%;
+  animation-delay: 3s;
+}
+
+.particle-5 {
+  top: 45%;
+  left: 10%;
+  animation-delay: 4s;
+}
+
+.particle-6 {
+  top: 60%;
+  right: 15%;
+  animation-delay: 5s;
+}
+
+/* Connection Lines */
+.connection-lines {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  opacity: 0.3;
+}
+
+.line {
+  stroke: var(--primary-color);
+  stroke-width: 1;
+  stroke-dasharray: 5, 5;
+  animation: linePulse 3s ease-in-out infinite;
+}
+
+.line-1 { animation-delay: 0s; }
+.line-2 { animation-delay: 0.5s; }
+.line-3 { animation-delay: 1s; }
+.line-4 { animation-delay: 1.5s; }
 
 /* ===== ANIMATIONS ===== */
-@keyframes float {
+/* Magnetic Bounce Animations - Each icon moves toward center and bounces back */
+@keyframes magneticBounce1 {
   0%, 100% {
-    transform: translateY(0) rotate(0deg);
+    transform: translate(-50%, 0);
+  }
+  25% {
+    transform: translate(-50%, 40px);
   }
   50% {
-    transform: translateY(-20px) rotate(10deg);
+    transform: translate(-50%, 20px);
+  }
+  75% {
+    transform: translate(-50%, 30px);
   }
 }
 
-@keyframes pulse {
+@keyframes magneticBounce2 {
   0%, 100% {
-    transform: translate(-50%, -50%) scale(1);
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(-50px, 40px);
   }
   50% {
-    transform: translate(-50%, -50%) scale(1.05);
+    transform: translate(-25px, 20px);
+  }
+  75% {
+    transform: translate(-35px, 30px);
+  }
+}
+
+@keyframes magneticBounce3 {
+  0%, 100% {
+    transform: translate(0, -50%);
+  }
+  25% {
+    transform: translate(-60px, -50%);
+  }
+  50% {
+    transform: translate(-30px, -50%);
+  }
+  75% {
+    transform: translate(-45px, -50%);
+  }
+}
+
+@keyframes magneticBounce4 {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(-50px, -40px);
+  }
+  50% {
+    transform: translate(-25px, -20px);
+  }
+  75% {
+    transform: translate(-35px, -30px);
+  }
+}
+
+@keyframes magneticBounce5 {
+  0%, 100% {
+    transform: translate(-50%, 0);
+  }
+  25% {
+    transform: translate(-50%, -40px);
+  }
+  50% {
+    transform: translate(-50%, -20px);
+  }
+  75% {
+    transform: translate(-50%, -30px);
+  }
+}
+
+@keyframes magneticBounce6 {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(50px, -40px);
+  }
+  50% {
+    transform: translate(25px, -20px);
+  }
+  75% {
+    transform: translate(35px, -30px);
+  }
+}
+
+@keyframes magneticBounce7 {
+  0%, 100% {
+    transform: translate(0, -50%);
+  }
+  25% {
+    transform: translate(60px, -50%);
+  }
+  50% {
+    transform: translate(30px, -50%);
+  }
+  75% {
+    transform: translate(45px, -50%);
+  }
+}
+
+@keyframes magneticBounce8 {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(50px, 40px);
+  }
+  50% {
+    transform: translate(25px, 20px);
+  }
+  75% {
+    transform: translate(35px, 30px);
+  }
+}
+
+@keyframes hubPulse {
+  0%, 100% {
+    transform: translate(-50%, -50%) scale(1);
+    box-shadow: 0 0 40px rgba(255, 235, 59, 0.6);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.1);
+    box-shadow: 0 0 60px rgba(255, 235, 59, 0.8);
+  }
+}
+
+@keyframes codeRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes ringPulse {
+  0%, 100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.3;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.2);
+    opacity: 0.6;
+  }
+}
+
+@keyframes particleFloat {
+  0%, 100% {
+    transform: translate(0, 0);
+    opacity: 0.6;
+  }
+  25% {
+    transform: translate(20px, -30px);
+    opacity: 0.8;
+  }
+  50% {
+    transform: translate(-15px, -50px);
+    opacity: 0.4;
+  }
+  75% {
+    transform: translate(-30px, -20px);
+    opacity: 0.7;
+  }
+}
+
+@keyframes linePulse {
+  0%, 100% {
+    opacity: 0.2;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    opacity: 0.5;
+    stroke-dashoffset: 10;
   }
 }
 
@@ -360,30 +722,28 @@ nav {
   left: 0;
   width: 100%;
   opacity: 0;
-  animation: rotateText 18s infinite;
+  animation: rotateText 12s infinite;
 }
 
 .rotating-text:nth-child(1) { animation-delay: 0s; }
 .rotating-text:nth-child(2) { animation-delay: 3s; }
 .rotating-text:nth-child(3) { animation-delay: 6s; }
 .rotating-text:nth-child(4) { animation-delay: 9s; }
-.rotating-text:nth-child(5) { animation-delay: 12s; }
-.rotating-text:nth-child(6) { animation-delay: 15s; }
 
 @keyframes rotateText {
   0% {
     opacity: 0;
     transform: translateY(20px);
   }
-  5% {
+  8% {
     opacity: 1;
     transform: translateY(0);
   }
-  15% {
+  25% {
     opacity: 1;
     transform: translateY(0);
   }
-  20% {
+  33% {
     opacity: 0;
     transform: translateY(-20px);
   }
