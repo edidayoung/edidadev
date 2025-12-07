@@ -301,3 +301,51 @@
     font-size: 1rem;
   }
 }
+
+/* Resume Download - Special Styling */
+.resume-download {
+  position: relative;
+}
+
+.resume-download span {
+  color: var(--primary-color);
+  font-weight: 600;
+  text-shadow: 0 0 5px var(--primary-glow);
+  animation: textGlow 2s ease-in-out infinite;
+  transition: all 0.3s ease;
+}
+
+.resume-download i {
+  animation: bounce 1.5s ease-in-out infinite;
+  transition: all 0.3s ease;
+}
+
+.resume-download:hover span {
+  color: #fff;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.resume-download:hover i {
+  color: #fff;
+}
+
+@keyframes textGlow {
+  0%, 100% {
+    text-shadow: 0 0 5px var(--primary-glow);
+  }
+  50% {
+    text-shadow: 0 0 8px var(--primary-glow);
+  }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-8px);
+  }
+  60% {
+    transform: translateY(-4px);
+  }
+}
