@@ -221,6 +221,18 @@
   .skill-percentage {
     font-size: 0.85rem;
   }
+  
+  /* COMPLETELY DISABLE DESCRIPTION ON MOBILE */
+  .skill-description {
+    display: none !important;
+  }
+  
+  .skill-card:hover .skill-description,
+  .skill-card.active .skill-description {
+    display: none !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+  }
 }
 
 /* Small Mobile */
@@ -274,12 +286,15 @@
   z-index: 10;
 }
 
-.skill-card:hover .skill-description {
-  opacity: 1;
-  pointer-events: auto;
+/* Desktop: Show on hover */
+@media (hover: hover) and (pointer: fine) {
+  .skill-card:hover .skill-description {
+    opacity: 1;
+    pointer-events: auto;
+  }
 }
 
-/* Mobile: Show description on click/active state */
+/* Mobile/Touch: Show on click/active state only */
 .skill-card.active .skill-description {
   opacity: 1;
   pointer-events: auto;

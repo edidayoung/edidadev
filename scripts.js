@@ -182,38 +182,5 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-// Mobile Skill Card Click Toggle (for description)
-document.addEventListener('DOMContentLoaded', function() {
-  const skillCards = document.querySelectorAll('.skill-card');
-  
-  // Check if device is mobile/touch device
-  const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
-  
-  if (isTouchDevice) {
-    skillCards.forEach(card => {
-      card.addEventListener('click', function(e) {
-        // Prevent default behavior
-        e.preventDefault();
-        
-        // Toggle active class
-        this.classList.toggle('active');
-        
-        // Remove active class from other cards
-        skillCards.forEach(otherCard => {
-          if (otherCard !== this) {
-            otherCard.classList.remove('active');
-          }
-        });
-      });
-    });
-    
-    // Close description when clicking outside
-    document.addEventListener('click', function(e) {
-      if (!e.target.closest('.skill-card')) {
-        skillCards.forEach(card => {
-          card.classList.remove('active');
-        });
-      }
-    });
-  }
-});
+// Mobile Skill Card Click Toggle (DISABLED - descriptions hidden on mobile)
+// Descriptions only work on desktop with hover
