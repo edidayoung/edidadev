@@ -141,3 +141,79 @@ if (backToTopButton) {
 }
 
 document.addEventListener('DOMContentLoaded', initializeSkillBars);
+
+// Skills Filter Functionality
+document.addEventListener('DOMContentLoaded', function() {
+  const filterButtons = document.querySelectorAll('.skill-filter-btn');
+  const skillCards = document.querySelectorAll('.skill-card');
+  
+  filterButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      const filter = this.getAttribute('data-filter');
+      
+      // Remove active class from all buttons
+      filterButtons.forEach(btn => btn.classList.remove('active'));
+      
+      // Add active class to clicked button
+      this.classList.add('active');
+      
+      // Filter skill cards
+      skillCards.forEach(card => {
+        const category = card.getAttribute('data-category');
+        
+        if (filter === 'all') {
+          card.classList.remove('hidden');
+          // Trigger animation
+          setTimeout(() => {
+            card.style.animation = 'fadeInUp 0.5s ease forwards';
+          }, 50);
+        } else if (category === filter) {
+          card.classList.remove('hidden');
+          // Trigger animation
+          setTimeout(() => {
+            card.style.animation = 'fadeInUp 0.5s ease forwards';
+          }, 50);
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    });
+  });
+});
+
+
+// Mobile Skill Card Click Toggle (for description)
+document.addEventListener('DOMContentLoaded', function() {
+  const skillCards = document.querySelectorAll('.skill-card');
+  
+  // Check if device is mobile/touch device
+  const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+  
+  if (isTouchDevice) {
+    skillCards.forEach(card => {
+      card.addEventListener('click', function(e) {
+        // Prevent default behavior
+        e.preventDefault();
+        
+        // Toggle active class
+        this.classList.toggle('active');
+        
+        // Remove active class from other cards
+        skillCards.forEach(otherCard => {
+          if (otherCard !== this) {
+            otherCard.classList.remove('active');
+          }
+        });
+      });
+    });
+    
+    // Close description when clicking outside
+    document.addEventListener('click', function(e) {
+      if (!e.target.closest('.skill-card')) {
+        skillCards.forEach(card => {
+          card.classList.remove('active');
+        });
+      }
+    });
+  }
+});

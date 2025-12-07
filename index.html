@@ -1078,128 +1078,165 @@
 <section class="skills-section" id="skills">
   <div class="skills-container">
     <h2 class="skills-title">My Skills</h2>
-    <p class="skills-subtitle">Technologies and tools I work with</p>
+    <p class="skills-subtitle">Technologies and expertise I bring to the table</p>
     
-    <div class="skills-grid">
-      
-      <!-- Frontend Skills -->
-      <div class="skill-category">
-        <div class="category-header">
-          <i class="fas fa-code"></i>
-          <h3>Frontend Development</h3>
-        </div>
-        <div class="skills-list">
-          <div class="skill-item">
-            <span class="skill-name">HTML5</span>
-            <div class="skill-bar">
-              <div class="skill-progress" data-level="95"></div>
-            </div>
-            <span class="skill-percent">0%</span>
-          </div>
-          <div class="skill-item">
-            <span class="skill-name">CSS3</span>
-            <div class="skill-bar">
-              <div class="skill-progress" data-level="90"></div>
-            </div>
-            <span class="skill-percent">0%</span>
-          </div>
-          <div class="skill-item">
-            <span class="skill-name">JavaScript</span>
-            <div class="skill-bar">
-              <div class="skill-progress" data-level="82"></div>
-            </div>
-            <span class="skill-percent">0%</span>
-          </div>
-          <div class="skill-item">
-            <span class="skill-name">React</span>
-            <div class="skill-bar">
-              <div class="skill-progress" data-level="55"></div>
-            </div>
-            <span class="skill-percent">0%</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Tools & Others -->
-      <div class="skill-category">
-        <div class="category-header">
-          <i class="fas fa-tools"></i>
-          <h3>Tools & Others</h3>
-        </div>
-        <div class="skills-list">
-          <div class="skill-item">
-            <span class="skill-name">Git & GitHub</span>
-            <div class="skill-bar">
-              <div class="skill-progress" data-level="89"></div>
-            </div>
-            <span class="skill-percent">0%</span>
-          </div>
-          <div class="skill-item">
-            <span class="skill-name">Responsive Design</span>
-            <div class="skill-bar">
-              <div class="skill-progress" data-level="95"></div>
-            </div>
-            <span class="skill-percent">0%</span>
-          </div>
-          <div class="skill-item">
-            <span class="skill-name">API Integration</span>
-            <div class="skill-bar">
-              <div class="skill-progress" data-level="70"></div>
-            </div>
-            <span class="skill-percent">0%</span>
-          </div>
-          <div class="skill-item">
-            <span class="skill-name">Problem Solving</span>
-            <div class="skill-bar">
-              <div class="skill-progress" data-level="90"></div>
-            </div>
-            <span class="skill-percent">0%</span>
-          </div>
-        </div>
-      </div>
-
+    <!-- Skill Filters -->
+    <div class="skill-filters">
+      <button class="skill-filter-btn active" data-filter="all">
+        <i class="fas fa-th"></i>
+        <span>All</span>
+      </button>
+      <button class="skill-filter-btn" data-filter="frontend">
+        <i class="fas fa-laptop-code"></i>
+        <span>Frontend</span>
+      </button>
+      <button class="skill-filter-btn" data-filter="backend">
+        <i class="fas fa-server"></i>
+        <span>Backend</span>
+      </button>
+      <button class="skill-filter-btn" data-filter="tools">
+        <i class="fas fa-tools"></i>
+        <span>Tools</span>
+      </button>
+      <button class="skill-filter-btn" data-filter="soft">
+        <i class="fas fa-users"></i>
+        <span>Soft Skills</span>
+      </button>
     </div>
 
-    <!-- Tech Stack Icons - Horizontal on wide screens -->
-    <div class="tech-stack">
-      <h3>Tech Stack</h3>
-      <div class="tech-icons">
-        <div class="tech-icon">
-          <i class="fab fa-html5"></i>
-          <span>HTML5</span>
-        </div>
-        <div class="tech-icon">
-          <i class="fab fa-css3-alt"></i>
-          <span>CSS3</span>
-        </div>
-        <div class="tech-icon">
-          <i class="fab fa-js-square"></i>
-          <span>JavaScript</span>
-        </div>
-        <div class="tech-icon">
-          <i class="fab fa-react"></i>
-          <span>React</span>
-        </div>
-        <div class="tech-icon">
-          <i class="fab fa-git-alt"></i>
-          <span>Git</span>
-        </div>
-        <div class="tech-icon">
-          <i class="fab fa-github"></i>
-          <span>GitHub</span>
-        </div>
-        <div class="tech-icon">
-          <i class="fab fa-figma"></i>
-          <span>Figma</span>
-        </div>
+    <!-- Skills Grid -->
+    <div class="skills-board">
+      
+      <!-- Frontend Skills -->
+      <div class="skill-card" data-category="frontend">
+        <div class="skill-card-icon"><i class="fab fa-html5"></i></div>
+        <h3>HTML5</h3>
+        <div class="skill-level"><div class="skill-level-bar" style="width: 95%"></div></div>
+        <span class="skill-percentage">95%</span>
+        <p class="skill-description">Semantic markup, SEO optimization, accessibility standards</p>
       </div>
+
+      <div class="skill-card" data-category="frontend">
+        <div class="skill-card-icon"><i class="fab fa-css3-alt"></i></div>
+        <h3>CSS3</h3>
+        <div class="skill-level"><div class="skill-level-bar" style="width: 90%"></div></div>
+        <span class="skill-percentage">90%</span>
+        <p class="skill-description">Flexbox, Grid, animations, custom properties, responsive design</p>
+      </div>
+
+      <div class="skill-card" data-category="frontend">
+        <div class="skill-card-icon"><i class="fab fa-js-square"></i></div>
+        <h3>JavaScript</h3>
+        <div class="skill-level"><div class="skill-level-bar" style="width: 85%"></div></div>
+        <span class="skill-percentage">85%</span>
+        <p class="skill-description">ES6+, async/await, DOM manipulation, event handling</p>
+      </div>
+
+      <div class="skill-card" data-category="frontend">
+        <div class="skill-card-icon"><i class="fab fa-react"></i></div>
+        <h3>React.js</h3>
+        <div class="skill-level"><div class="skill-level-bar" style="width: 75%"></div></div>
+        <span class="skill-percentage">75%</span>
+        <p class="skill-description">Hooks, Context API, component architecture, state management</p>
+      </div>
+
+      <div class="skill-card" data-category="frontend">
+        <div class="skill-card-icon"><i class="fas fa-wind"></i></div>
+        <h3>Tailwind CSS</h3>
+        <div class="skill-level"><div class="skill-level-bar" style="width: 80%"></div></div>
+        <span class="skill-percentage">80%</span>
+        <p class="skill-description">Utility-first CSS, responsive design, custom configurations</p>
+      </div>
+
+      <div class="skill-card" data-category="frontend">
+        <div class="skill-card-icon"><i class="fas fa-code"></i></div>
+        <h3>TypeScript</h3>
+        <div class="skill-level"><div class="skill-level-bar" style="width: 70%"></div></div>
+        <span class="skill-percentage">70%</span>
+        <p class="skill-description">Type safety, interfaces, generics, type definitions</p>
+      </div>
+
+      <!-- Backend Skills -->
+      <div class="skill-card" data-category="backend">
+        <div class="skill-card-icon"><i class="fab fa-node-js"></i></div>
+        <h3>Node.js</h3>
+        <div class="skill-level"><div class="skill-level-bar" style="width: 60%"></div></div>
+        <span class="skill-percentage">60%</span>
+        <p class="skill-description">Server-side JavaScript, npm packages, backend development</p>
+      </div>
+
+      <div class="skill-card" data-category="backend">
+        <div class="skill-card-icon"><i class="fas fa-fire"></i></div>
+        <h3>Firebase</h3>
+        <div class="skill-level"><div class="skill-level-bar" style="width: 75%"></div></div>
+        <span class="skill-percentage">75%</span>
+        <p class="skill-description">Firestore, Authentication, Storage, Hosting, real-time data</p>
+      </div>
+
+      <div class="skill-card" data-category="backend">
+        <div class="skill-card-icon"><i class="fas fa-plug"></i></div>
+        <h3>REST APIs</h3>
+        <div class="skill-level"><div class="skill-level-bar" style="width: 80%"></div></div>
+        <span class="skill-percentage">80%</span>
+        <p class="skill-description">API integration, fetch, axios, error handling, data management</p>
+      </div>
+
+      <!-- Tools & DevOps -->
+      <div class="skill-card" data-category="tools">
+        <div class="skill-card-icon"><i class="fab fa-git-alt"></i></div>
+        <h3>Git & GitHub</h3>
+        <div class="skill-level"><div class="skill-level-bar" style="width: 90%"></div></div>
+        <span class="skill-percentage">90%</span>
+        <p class="skill-description">Version control, branching, merging, pull requests, collaboration</p>
+      </div>
+
+      <div class="skill-card" data-category="tools">
+        <div class="skill-card-icon"><i class="fab fa-figma"></i></div>
+        <h3>Figma</h3>
+        <div class="skill-level"><div class="skill-level-bar" style="width: 70%"></div></div>
+        <span class="skill-percentage">70%</span>
+        <p class="skill-description">Design to code, prototyping, UI/UX collaboration</p>
+      </div>
+
+      <div class="skill-card" data-category="tools">
+        <div class="skill-card-icon"><i class="fas fa-rocket"></i></div>
+        <h3>Deployment</h3>
+        <div class="skill-level"><div class="skill-level-bar" style="width: 85%"></div></div>
+        <span class="skill-percentage">85%</span>
+        <p class="skill-description">Vercel, Netlify, CI/CD, hosting, domain management</p>
+      </div>
+
+      <!-- Soft Skills -->
+      <div class="skill-card" data-category="soft">
+        <div class="skill-card-icon"><i class="fas fa-puzzle-piece"></i></div>
+        <h3>Problem Solving</h3>
+        <div class="skill-level"><div class="skill-level-bar" style="width: 90%"></div></div>
+        <span class="skill-percentage">90%</span>
+        <p class="skill-description">Analytical thinking, debugging, optimization, creative solutions</p>
+      </div>
+
+      <div class="skill-card" data-category="soft">
+        <div class="skill-card-icon"><i class="fas fa-bolt"></i></div>
+        <h3>Fast Learner</h3>
+        <div class="skill-level"><div class="skill-level-bar" style="width: 99%"></div></div>
+        <span class="skill-percentage">99%</span>
+        <p class="skill-description">Quick adaptation, self-learning, curiosity, continuous growth</p>
+      </div>
+
+      <div class="skill-card" data-category="soft">
+        <div class="skill-card-icon"><i class="fas fa-users"></i></div>
+        <h3>Team Player</h3>
+        <div class="skill-level"><div class="skill-level-bar" style="width: 85%"></div></div>
+        <span class="skill-percentage">85%</span>
+        <p class="skill-description">Communication, code reviews, pair programming, collaboration</p>
+      </div>
+
     </div>
 
   </div>
 </section>
 
     <!-----Footer Section----->
-    
 
 <footer class="footer-section">
   <div class="footer-container">
@@ -1207,103 +1244,75 @@
     <!-- Main Footer Content -->
     <div class="footer-content">
       
-      <!-- Brand Section -->
+      <!-- Brand & About -->
       <div class="footer-brand">
         <div class="footer-logo">
           <i class="fa-solid fa-diamond"></i>
           <span>Edidayoung</span>
         </div>
-        <p class="footer-tagline">Turning ideas into digital experiences, one line of code at a time 🚀</p>
-        <div class="footer-stats">
-          <div class="footer-stat">
-            <span class="stat-number">50k+</span>
-            <span class="stat-label">Lines of Code</span>
-          </div>
-          <div class="footer-stat">
-            <span class="stat-number">99%</span>
-            <span class="stat-label">Coffee Powered</span>
-          </div>
+        <p class="footer-tagline">Frontend Developer crafting digital experiences with clean code and creative solutions.</p>
+        <div class="footer-availability">
+          <span class="status-dot"></span>
+          <span>Available for new opportunities</span>
         </div>
       </div>
 
       <!-- Quick Links -->
-      <div class="footer-links">
-        <h4>Quick Navigation</h4>
+      <div class="footer-section-links">
+        <h4>Navigate</h4>
         <ul>
           <li><a href="#home">Home</a></li>
-          <li><a href="#bio">Bio</a></li>
+          <li><a href="#bio">About Me</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#skills">Skills</a></li>
-          <li><a href="mailto:ekaetteedidiong0@gmail.com" target="_blank">Get in Touch</a></li>
         </ul>
       </div>
 
-      <!-- Tech Stack -->
-      <div class="footer-tech">
-        <h4>Tech Arsenal</h4>
-        <div class="tech-tags">
-          <span>HTML5</span>
-          <span>CSS3</span>
-          <span>JavaScript</span>
-          <span>Git</span>
-          <span>GitHub</span>
-          <span>API Integration</span>
-          <span>Responsive Design</span>
-          <span>Web Apps</span>
+      <!-- Contact -->
+      <div class="footer-section-contact">
+        <h4>Get in Touch</h4>
+        <div class="contact-items">
+          <a href="mailto:ekaetteedidiong0@gmail.com" class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <span>ekaetteedidiong0@gmail.com</span>
+          </a>
+          <a href="https://wa.link/bnq8hy" class="contact-item" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+            <span>WhatsApp</span>
+          </a>
+          <a href="documents/EDIDIONG-EKAETTE-CV-Resume.pdf" download class="contact-item">
+            <i class="fas fa-download"></i>
+            <span>Download Resume</span>
+          </a>
         </div>
       </div>
 
-      <!-- Contact & Social -->
-      <div class="footer-contact">
-        <h4>Let's Connect</h4>
-        <div class="contact-info">
-          <a href="mailto:ekaetteedidiong0@gmail.com" class="contact-link">
-            <i class="fas fa-envelope"></i>
-            ekaetteedidiong0@gmail.com
-          </a>
-          <a href="https://linkedin.com/in/edidiong-ekaette" class="contact-link" target="_blank">
-            <i class="fab fa-linkedin"></i>
-            LinkedIn
-          </a>
-          <a href="https://github.com/edidayoung" class="contact-link" target="_blank">
-            <i class="fab fa-github"></i>
-            GitHub
-          </a>
-        </div>
-        
-        <!-- Social Links -->
+      <!-- Social Links -->
+      <div class="footer-section-social">
+        <h4>Connect</h4>
         <div class="social-links">
-          <a href="https://linkedin.com/in/edidiong-ekaette" class="social-link" target="_blank">
+          <a href="https://linkedin.com/in/edidiong-ekaette" class="social-link" target="_blank" title="LinkedIn">
             <i class="fab fa-linkedin"></i>
           </a>
-          <a href="https://github.com/edidayoung" class="social-link" target="_blank">
+          <a href="https://github.com/edidayoung" class="social-link" target="_blank" title="GitHub">
             <i class="fab fa-github"></i>
           </a>
-          <a href="https://twitter.com/edida_young" class="social-link" target="_blank">
+          <a href="https://twitter.com/edida_young" class="social-link" target="_blank" title="Twitter">
             <i class="fab fa-twitter"></i>
           </a>
-          <a href="https://www.instagram.com/edidayoung?igsh=eW5uNWR4eWttbGVs" class="social-link" target="_blank">
+          <a href="https://www.instagram.com/edidayoung?igsh=eW5uNWR4eWttbGVs" class="social-link" target="_blank" title="Instagram">
             <i class="fab fa-instagram"></i>
           </a>
         </div>
+        <p class="social-cta">Let's build something amazing together!</p>
       </div>
 
     </div>
 
     <!-- Footer Bottom -->
     <div class="footer-bottom">
-      <div class="footer-message">
-        <p>Built with <i class="fas fa-heart" style="color: #ff4757;"></i> and <i class="fas fa-coffee" style="color: #8B4513;"></i> by Edidayoung</p>
-        <p class="footer-quote">"Great developers don't just write code, they create experiences"</p>
-      </div>
-      
-      <div class="footer-copyright">
-        <p>&copy; 2025 Edidayoung. All rights reserved. | Made with passion from Nigeria 🇳🇬</p>
-        <div class="footer-badges">
-          <span class="badge">🚀 Available for projects</span>
-          <span class="badge">💼 Open to opportunities</span>
-        </div>
-      </div>
+      <p class="copyright">&copy; 2025 Edidayoung. All rights reserved.</p>
+      <p class="footer-note">Built with passion from Nigeria 🇳🇬</p>
     </div>
 
     <!-- Back to Top Button -->
