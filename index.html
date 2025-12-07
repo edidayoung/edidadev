@@ -55,10 +55,10 @@
     <!-- END ROTATING TEXT -->
     
     <h3 class="sub-heading">
+      Got a problem? I'll solve it. Got an idea? I'll build it.<br>
+      Let's partner up and bring something wonderful to life, together.<br>
       Your <span class="highlight-text">ideas</span> are the <span class="highlight-text">blueprints</span>. 
       My <span class="highlight-text">code</span> is the <span class="highlight-text">foundation</span>.<br>
-      Got a problem? I'll solve it. Got an idea? I'll build it.<br>
-      Let's partner up and bring something wonderful to life, together.
     </h3>
     
     <div class="hero-buttons">
@@ -152,140 +152,714 @@
   <!-----Bio Section----->
 
   <section class="bio-section" id="bio">
-  <div class="bio-3d-container">
-    <h2 class="bio-3d-title">Behind the Code</h2>
-    
-    <div class="bio-3d-cards">
+    <div class="bio-container">
+      <div class="bio-header">
+        <h2 class="bio-title">Behind the Code</h2>
+        <p class="bio-subtitle">Click any card to discover more about me</p>
+      </div>
       
-      <!-- Card 1: Who I Am -->
-      <div class="bio-card" data-card="1">
-        <div class="card-front">
-          <div class="card-icon">
-            <i class="fas fa-user"></i>
+      <div class="bio-cards-grid">
+        
+        <!-- Card 1: Who I Am -->
+        <div class="bio-card" data-modal="modal1">
+          <div class="card-icon-wrapper">
+            <i class="fas fa-user-circle"></i>
           </div>
-          <h3>Who I Am</h3>
-          <p>Get to know me</p>
-          <div class="card-hint">Click Me</div>
-        </div>
-        <div class="card-back">
-          <h3>Edidayoung</h3>
-          <p class="card-role">Frontend Developer & Email Specialist</p>
-          <div class="card-bio">
-            <p>Passionate developer, transforming ideas into digital experiences through clean code and intuitive design.</p>
-          </div>
-          <div class="card-stats">
-            <div class="mini-stat">
-              <span>12+ Months</span>
-            </div>
-            <div class="mini-stat">
-              <span>50k+ Code</span>
-            </div>
-            <div class="mini-stat">
-              <span>99% Learning</span>
-            </div>
+          <h3 class="card-title">Who I Am</h3>
+          <p class="card-description">Developer, Problem Solver, Tech Enthusiast</p>
+          <div class="card-action">
+            <span>Learn More</span>
+            <i class="fas fa-arrow-right"></i>
           </div>
         </div>
-      </div>
 
-      <!-- Card 2: My Journey -->
-      <div class="bio-card" data-card="2">
-        <div class="card-front">
-          <div class="card-icon">
-            <i class="fas fa-road"></i>
+        <!-- Card 2: My Journey -->
+        <div class="bio-card" data-modal="modal2">
+          <div class="card-icon-wrapper">
+            <i class="fas fa-route"></i>
           </div>
-          <h3>My Journey</h3>
-          <p>From start to now</p>
-          <div class="card-hint">Click Me</div>
-        </div>
-        <div class="card-back">
-          <div class="journey-compact">
-            <div class="journey-step">
-              <span class="step-year">2021</span>
-              <p>Started at Aptech</p>
-            </div>
-            <div class="journey-step">
-              <span class="step-year">2023</span>
-              <p>Advanced Skills</p>
-            </div>
-            <div class="journey-step">
-              <span class="step-year">2024</span>
-              <p>Graduated ADSE</p>
-            </div>
-            <div class="journey-step">
-              <span class="step-year">2025</span>
-              <p>Building Future</p>
-            </div>
+          <h3 class="card-title">My Journey</h3>
+          <p class="card-description">From beginner to professional developer</p>
+          <div class="card-action">
+            <span>View Timeline</span>
+            <i class="fas fa-arrow-right"></i>
           </div>
         </div>
-      </div>
 
-      <!-- Card 3: My Passions -->
-      <div class="bio-card" data-card="3">
-        <div class="card-front">
-          <div class="card-icon">
+        <!-- Card 3: What I Offer -->
+        <div class="bio-card" data-modal="modal3">
+          <div class="card-icon-wrapper">
+            <i class="fas fa-briefcase"></i>
+          </div>
+          <h3 class="card-title">What I Offer</h3>
+          <p class="card-description">Services & expertise I bring to the table</p>
+          <div class="card-action">
+            <span>See Services</span>
+            <i class="fas fa-arrow-right"></i>
+          </div>
+        </div>
+
+        <!-- Card 4: My Passions -->
+        <div class="bio-card" data-modal="modal4">
+          <div class="card-icon-wrapper">
             <i class="fas fa-heart"></i>
           </div>
-          <h3>My Passions</h3>
-          <p>What drives me</p>
-          <div class="card-hint">Click Me</div>
-        </div>
-        <div class="card-back">
-          <div class="passions-compact">
-            <div class="passion">
-              <i class="fas fa-code"></i>
-              <h4>Coding</h4>
-              <p>Building digital solutions</p>
-            </div>
-            <div class="passion">
-              <i class="fas fa-gamepad"></i>
-              <h4>Gaming</h4>
-              <p>Strategy & creativity</p>
-            </div>
-            <div class="passion">
-              <i class="fas fa-chart-line"></i>
-              <h4>Growth</h4>
-              <p>Always learning</p>
-            </div>
+          <h3 class="card-title">My Passions</h3>
+          <p class="card-description">What drives and motivates me daily</p>
+          <div class="card-action">
+            <span>Discover More</span>
+            <i class="fas fa-arrow-right"></i>
           </div>
         </div>
+
+        <!-- Card 5: Why Hire Me -->
+        <div class="bio-card" data-modal="modal5">
+          <div class="card-icon-wrapper">
+            <i class="fas fa-star"></i>
+          </div>
+          <h3 class="card-title">Why Hire Me</h3>
+          <p class="card-description">What makes me stand out from the crowd</p>
+          <div class="card-action">
+            <span>Find Out</span>
+            <i class="fas fa-arrow-right"></i>
+          </div>
+        </div>
+
+        <!-- Card 6: How I Work -->
+        <div class="bio-card" data-modal="modal6">
+          <div class="card-icon-wrapper">
+            <i class="fas fa-cogs"></i>
+          </div>
+          <h3 class="card-title">How I Work</h3>
+          <p class="card-description">My process, tools, and collaboration style</p>
+          <div class="card-action">
+            <span>See Process</span>
+            <i class="fas fa-arrow-right"></i>
+          </div>
+        </div>
+
       </div>
 
-      <!-- Card 4: My Vision -->
-      <div class="bio-card" data-card="4">
-        <div class="card-front">
-          <div class="card-icon">
-            <i class="fas fa-bullseye"></i>
-          </div>
-          <h3>My Vision</h3>
-          <p>Future goals</p>
-          <div class="card-hint">Click Me</div>
-        </div>
-        <div class="card-back">
-          <div class="vision-compact">
-            <div class="vision-goal">
-              <i class="fas fa-rocket"></i>
-              <p>Full-Stack Mastery</p>
-            </div>
-            <div class="vision-goal">
-              <i class="fas fa-briefcase"></i>
-              <p>Dream Career</p>
-            </div>
-            <div class="vision-goal">
-              <i class="fas fa-users"></i>
-              <p>Tech Community</p>
-            </div>
-            <div class="vision-goal">
-              <i class="fas fa-lightbulb"></i>
-              <p>Innovate & Impact</p>
-            </div>
-          </div>
-        </div>
+      <!-- Availability Badge -->
+      <div class="availability-badge">
+        <span class="status-dot"></span>
+        <span class="status-text">Available for new opportunities</span>
       </div>
-
     </div>
-  </div>
-</section>
 
+    <!-- Modal 1: Who I Am -->
+    <div class="bio-modal" id="modal1">
+      <div class="modal-content">
+        <button class="modal-close">&times;</button>
+        <div class="modal-header">
+          <i class="fas fa-user-circle"></i>
+          <h2>Who I Am</h2>
+        </div>
+        <div class="modal-body">
+          <!-- Profile Card -->
+          <div class="profile-card">
+            <div class="profile-image-container">
+              <img src="images/perfectman.jpg" alt="Edidiong Ekaette" class="profile-img">
+              <div class="verified-badge">
+                <i class="fas fa-check"></i>
+              </div>
+            </div>
+            <div class="profile-details">
+              <h3 class="profile-name">Edidiong Ekaette <span class="profile-nickname">(Edidayoung)</span></h3>
+              <p class="profile-role">Frontend Developer & Email Specialist</p>
+              <div class="profile-location">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Nigeria</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- About Section -->
+          <div class="about-content">
+            <h4 class="section-heading"><i class="fas fa-user"></i> About Me</h4>
+            <p class="modal-text">
+              I'm a passionate frontend developer who transforms ideas into elegant digital experiences. 
+              With over a year of hands-on experience, I specialize in building responsive, user-friendly 
+              web applications that not only look great but perform exceptionally.
+            </p>
+            
+            <p class="modal-text">
+              My approach combines clean, maintainable code with modern design principles. I believe 
+              in writing code that's not just functional, but also scalable and easy to understand. 
+              Every project is an opportunity to learn, grow, and create something meaningful.
+            </p>
+          </div>
+
+          <div class="modal-stats">
+            <div class="modal-stat">
+              <i class="fas fa-calendar-alt"></i>
+              <span class="stat-number">12+</span>
+              <span class="stat-label">Months Experience</span>
+            </div>
+            <div class="modal-stat">
+              <i class="fas fa-code"></i>
+              <span class="stat-number">50k+</span>
+              <span class="stat-label">Lines of Code</span>
+            </div>
+            <div class="modal-stat">
+              <i class="fas fa-project-diagram"></i>
+              <span class="stat-number">15+</span>
+              <span class="stat-label">Projects Completed</span>
+            </div>
+          </div>
+
+          <!-- Quick Facts Section -->
+          <div class="facts-section">
+            <h4 class="section-heading"><i class="fas fa-star"></i> Quick Facts</h4>
+            <ul class="facts-list">
+              <li><i class="fas fa-check-circle"></i> Based in Nigeria, working globally</li>
+              <li><i class="fas fa-check-circle"></i> ADSE Graduate from Aptech</li>
+              <li><i class="fas fa-check-circle"></i> Fast learner with 99% learning pace</li>
+              <li><i class="fas fa-check-circle"></i> Passionate about clean code & best practices</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 2: My Journey -->
+    <div class="bio-modal" id="modal2">
+      <div class="modal-content">
+        <button class="modal-close">&times;</button>
+        <div class="modal-header">
+          <i class="fas fa-route"></i>
+          <h2>My Journey</h2>
+        </div>
+        <div class="modal-body">
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-marker">
+                <span class="timeline-year">2021</span>
+              </div>
+              <div class="timeline-content">
+                <h4>The Beginning</h4>
+                <p>Started my journey at Aptech Computer Education, diving into the world of programming and web development.</p>
+                <div class="timeline-tags">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript Basics</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-marker">
+                <span class="timeline-year">2023</span>
+              </div>
+              <div class="timeline-content">
+                <h4>Skill Advancement</h4>
+                <p>Deepened my knowledge in frontend frameworks, API integration, and responsive design. Started building real-world projects.</p>
+                <div class="timeline-tags">
+                  <span>React</span>
+                  <span>APIs</span>
+                  <span>Git & GitHub</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-marker">
+                <span class="timeline-year">2024</span>
+              </div>
+              <div class="timeline-content">
+                <h4>Graduation & Growth</h4>
+                <p>Graduated with ADSE certification. Completed multiple client projects and internships, solidifying my expertise.</p>
+                <div class="timeline-tags">
+                  <span>Professional Projects</span>
+                  <span>Email Development</span>
+                  <span>Advanced CSS</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-marker">
+                <span class="timeline-year">2025</span>
+              </div>
+              <div class="timeline-content">
+                <h4>Building the Future</h4>
+                <p>Currently seeking opportunities to contribute to innovative teams and create impactful digital solutions.</p>
+                <div class="timeline-tags">
+                  <span>Full-Stack Learning</span>
+                  <span>Open to Opportunities</span>
+                  <span>Continuous Growth</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 3: What I Offer -->
+    <div class="bio-modal" id="modal3">
+      <div class="modal-content">
+        <button class="modal-close">&times;</button>
+        <div class="modal-header">
+          <i class="fas fa-briefcase"></i>
+          <h2>What I Offer</h2>
+        </div>
+        <div class="modal-body">
+          <p class="modal-intro-text">
+            Here's what I bring to your team or project:
+          </p>
+
+          <div class="services-grid">
+            <div class="service-item">
+              <div class="service-icon">
+                <i class="fas fa-laptop-code"></i>
+              </div>
+              <h4>Frontend Development</h4>
+              <p>Building responsive, performant web applications using modern frameworks and best practices.</p>
+              <ul class="service-tech">
+                <li>React.js</li>
+                <li>HTML5 & CSS3</li>
+                <li>JavaScript ES6+</li>
+              </ul>
+            </div>
+
+            <div class="service-item">
+              <div class="service-icon">
+                <i class="fas fa-mobile-alt"></i>
+              </div>
+              <h4>Responsive Design</h4>
+              <p>Creating pixel-perfect, mobile-first designs that work seamlessly across all devices.</p>
+              <ul class="service-tech">
+                <li>Mobile-First Approach</li>
+                <li>Cross-Browser Compatible</li>
+                <li>Accessibility Standards</li>
+              </ul>
+            </div>
+
+            <div class="service-item">
+              <div class="service-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <h4>Email Development</h4>
+              <p>Crafting professional, responsive email templates that render perfectly across all email clients.</p>
+              <ul class="service-tech">
+                <li>HTML Email Templates</li>
+                <li>Email Client Testing</li>
+                <li>Marketing Campaigns</li>
+              </ul>
+            </div>
+
+            <div class="service-item">
+              <div class="service-icon">
+                <i class="fas fa-plug"></i>
+              </div>
+              <h4>API Integration</h4>
+              <p>Seamlessly connecting frontend applications with backend services and third-party APIs.</p>
+              <ul class="service-tech">
+                <li>RESTful APIs</li>
+                <li>Fetch & Axios</li>
+                <li>Data Management</li>
+              </ul>
+            </div>
+
+            <div class="service-item">
+              <div class="service-icon">
+                <i class="fas fa-paint-brush"></i>
+              </div>
+              <h4>UI/UX Implementation</h4>
+              <p>Translating designs into functional, beautiful interfaces with attention to detail.</p>
+              <ul class="service-tech">
+                <li>Figma to Code</li>
+                <li>Animation & Transitions</li>
+                <li>User Experience Focus</li>
+              </ul>
+            </div>
+
+            <div class="service-item">
+              <div class="service-icon">
+                <i class="fas fa-tachometer-alt"></i>
+              </div>
+              <h4>Performance Optimization</h4>
+              <p>Ensuring fast load times and smooth user experiences through code optimization.</p>
+              <ul class="service-tech">
+                <li>Code Splitting</li>
+                <li>Lazy Loading</li>
+                <li>Performance Audits</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 4: My Passions -->
+    <div class="bio-modal" id="modal4">
+      <div class="modal-content">
+        <button class="modal-close">&times;</button>
+        <div class="modal-header">
+          <i class="fas fa-heart"></i>
+          <h2>My Passions</h2>
+        </div>
+        <div class="modal-body">
+          <p class="modal-intro-text">
+            What fuels my drive and keeps me motivated every day:
+          </p>
+
+          <div class="passions-list">
+            <div class="passion-item">
+              <div class="passion-icon">
+                <i class="fas fa-code"></i>
+              </div>
+              <div class="passion-content">
+                <h4>Coding & Development</h4>
+                <p>
+                  There's something magical about turning a blank screen into a functional, 
+                  beautiful application. I love the challenge of solving complex problems with 
+                  elegant code solutions. Every bug fixed is a victory, every feature completed 
+                  is a step forward.
+                </p>
+              </div>
+            </div>
+
+            <div class="passion-item">
+              <div class="passion-icon">
+                <i class="fas fa-lightbulb"></i>
+              </div>
+              <div class="passion-content">
+                <h4>Problem Solving</h4>
+                <p>
+                  I thrive on challenges. Whether it's debugging a tricky issue or architecting 
+                  a new feature, I approach every problem with curiosity and determination. 
+                  The satisfaction of finding the perfect solution is unmatched.
+                </p>
+              </div>
+            </div>
+
+            <div class="passion-item">
+              <div class="passion-icon">
+                <i class="fas fa-book-reader"></i>
+              </div>
+              <div class="passion-content">
+                <h4>Continuous Learning</h4>
+                <p>
+                  Technology evolves rapidly, and I love keeping up. From new frameworks to 
+                  design patterns, I'm always learning. My 99% learning pace isn't just a 
+                  stat—it's a lifestyle. Every day is an opportunity to grow.
+                </p>
+              </div>
+            </div>
+
+            <div class="passion-item">
+              <div class="passion-icon">
+                <i class="fas fa-gamepad"></i>
+              </div>
+              <div class="passion-content">
+                <h4>Gaming & Strategy</h4>
+                <p>
+                  Gaming isn't just a hobby—it's where I sharpen my strategic thinking and 
+                  problem-solving skills. The same mindset that helps me win games helps me 
+                  architect better applications and think through complex logic.
+                </p>
+              </div>
+            </div>
+
+            <div class="passion-item">
+              <div class="passion-icon">
+                <i class="fas fa-users"></i>
+              </div>
+              <div class="passion-content">
+                <h4>Collaboration & Community</h4>
+                <p>
+                  I believe the best solutions come from collaboration. Whether it's pair 
+                  programming, code reviews, or contributing to open source, I love working 
+                  with other developers and learning from the community.
+                </p>
+              </div>
+            </div>
+
+            <div class="passion-item">
+              <div class="passion-icon">
+                <i class="fas fa-rocket"></i>
+              </div>
+              <div class="passion-content">
+                <h4>Building Impact</h4>
+                <p>
+                  At the end of the day, I want my work to matter. Whether it's helping a 
+                  business grow, making someone's life easier, or creating something people 
+                  love to use—that's what drives me forward.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 5: Why Hire Me -->
+    <div class="bio-modal" id="modal5">
+      <div class="modal-content">
+        <button class="modal-close">&times;</button>
+        <div class="modal-header">
+          <i class="fas fa-star"></i>
+          <h2>Why Hire Me</h2>
+        </div>
+        <div class="modal-body">
+          <p class="modal-intro-text">
+            Here's what sets me apart and makes me the right choice for your team:
+          </p>
+
+          <div class="why-hire-grid">
+            <div class="why-hire-item">
+              <div class="why-icon">
+                <i class="fas fa-bolt"></i>
+              </div>
+              <h4>Fast Learner</h4>
+              <p>
+                I adapt quickly to new technologies and frameworks. Give me a challenge, 
+                and I'll master it. My 99% learning pace means I'm always ready to tackle 
+                whatever your project needs.
+              </p>
+            </div>
+
+            <div class="why-hire-item">
+              <div class="why-icon">
+                <i class="fas fa-check-double"></i>
+              </div>
+              <h4>Quality-Focused</h4>
+              <p>
+                I don't just write code that works—I write code that's clean, maintainable, 
+                and scalable. Every line is written with best practices and future developers 
+                in mind.
+              </p>
+            </div>
+
+            <div class="why-hire-item">
+              <div class="why-icon">
+                <i class="fas fa-comments"></i>
+              </div>
+              <h4>Great Communicator</h4>
+              <p>
+                I believe clear communication is key to successful projects. I keep stakeholders 
+                informed, ask the right questions, and ensure everyone's on the same page.
+              </p>
+            </div>
+
+            <div class="why-hire-item">
+              <div class="why-icon">
+                <i class="fas fa-puzzle-piece"></i>
+              </div>
+              <h4>Problem Solver</h4>
+              <p>
+                I don't just identify problems—I solve them. With a strategic mindset and 
+                analytical approach, I find efficient solutions that work.
+              </p>
+            </div>
+
+            <div class="why-hire-item">
+              <div class="why-icon">
+                <i class="fas fa-clock"></i>
+              </div>
+              <h4>Reliable & Committed</h4>
+              <p>
+                When I commit to a project, I see it through. Deadlines matter, quality matters, 
+                and I deliver on both. You can count on me to show up and get the job done.
+              </p>
+            </div>
+
+            <div class="why-hire-item">
+              <div class="why-icon">
+                <i class="fas fa-fire"></i>
+              </div>
+              <h4>Passionate & Driven</h4>
+              <p>
+                This isn't just a job for me—it's my passion. I genuinely love what I do, 
+                and that enthusiasm translates into better work, more creativity, and 
+                exceptional results.
+              </p>
+            </div>
+          </div>
+
+          <div class="modal-cta">
+            <h4>Ready to work together?</h4>
+            <p>Let's build something amazing. I'm available for full-time positions, freelance projects, and collaborations.</p>
+            <div class="cta-buttons">
+              <a href="documents/EDIDIONG-EKAETTE-CV-Resume.pdf" download class="cta-btn primary">
+                <i class="fas fa-download"></i>
+                Download Resume
+              </a>
+              <a href="https://wa.link/bnq8hy" target="_blank" class="cta-btn secondary">
+                <i class="fab fa-whatsapp"></i>
+                Let's Talk
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 6: How I Work -->
+    <div class="bio-modal" id="modal6">
+      <div class="modal-content">
+        <button class="modal-close">&times;</button>
+        <div class="modal-header">
+          <i class="fas fa-cogs"></i>
+          <h2>How I Work</h2>
+        </div>
+        <div class="modal-body">
+          <p class="modal-intro-text">
+            My approach to development ensures quality, efficiency, and successful project delivery:
+          </p>
+
+          <div class="work-process">
+            <div class="process-step">
+              <div class="step-number">01</div>
+              <div class="step-content">
+                <h4><i class="fas fa-comments"></i> Understanding & Planning</h4>
+                <p>
+                  I start by deeply understanding project requirements, goals, and constraints. 
+                  I ask questions, clarify expectations, and create a clear roadmap before writing 
+                  a single line of code.
+                </p>
+                <div class="step-tools">
+                  <span>Requirements Analysis</span>
+                  <span>User Stories</span>
+                  <span>Technical Planning</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="process-step">
+              <div class="step-number">02</div>
+              <div class="step-content">
+                <h4><i class="fas fa-pencil-ruler"></i> Design & Architecture</h4>
+                <p>
+                  I design the solution architecture, plan component structure, and ensure 
+                  scalability. I believe in thinking through the entire system before implementation.
+                </p>
+                <div class="step-tools">
+                  <span>Wireframing</span>
+                  <span>Component Design</span>
+                  <span>Data Flow Planning</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="process-step">
+              <div class="step-number">03</div>
+              <div class="step-content">
+                <h4><i class="fas fa-code"></i> Development & Testing</h4>
+                <p>
+                  I write clean, well-documented code following best practices. I test as I build, 
+                  ensuring each feature works perfectly before moving to the next.
+                </p>
+                <div class="step-tools">
+                  <span>Clean Code</span>
+                  <span>Version Control</span>
+                  <span>Continuous Testing</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="process-step">
+              <div class="step-number">04</div>
+              <div class="step-content">
+                <h4><i class="fas fa-sync-alt"></i> Review & Iteration</h4>
+                <p>
+                  I gather feedback, refine the solution, and iterate based on user needs. 
+                  I'm always open to improvements and adjustments.
+                </p>
+                <div class="step-tools">
+                  <span>Code Reviews</span>
+                  <span>User Feedback</span>
+                  <span>Optimization</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="process-step">
+              <div class="step-number">05</div>
+              <div class="step-content">
+                <h4><i class="fas fa-rocket"></i> Deployment & Support</h4>
+                <p>
+                  I ensure smooth deployment, monitor performance, and provide ongoing support. 
+                  My job isn't done until the project is live and running smoothly.
+                </p>
+                <div class="step-tools">
+                  <span>Deployment</span>
+                  <span>Monitoring</span>
+                  <span>Documentation</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="work-style-section">
+            <h4>My Work Style</h4>
+            <div class="work-style-grid">
+              <div class="work-style-item">
+                <i class="fas fa-calendar-check"></i>
+                <h5>Organized & Structured</h5>
+                <p>I use task management tools and maintain clear documentation for every project.</p>
+              </div>
+              <div class="work-style-item">
+                <i class="fas fa-users-cog"></i>
+                <h5>Collaborative</h5>
+                <p>I thrive in team environments and value input from designers, developers, and stakeholders.</p>
+              </div>
+              <div class="work-style-item">
+                <i class="fas fa-clock"></i>
+                <h5>Time-Conscious</h5>
+                <p>I respect deadlines and communicate proactively if challenges arise.</p>
+              </div>
+              <div class="work-style-item">
+                <i class="fas fa-search"></i>
+                <h5>Detail-Oriented</h5>
+                <p>I pay attention to the small things that make a big difference in user experience.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="tools-section">
+            <h4>Tools I Use Daily</h4>
+            <div class="tools-list">
+              <div class="tool-category">
+                <h5><i class="fas fa-code"></i> Development</h5>
+                <p>VS Code, Git, GitHub, Chrome DevTools, Postman</p>
+              </div>
+              <div class="tool-category">
+                <h5><i class="fas fa-paint-brush"></i> Design</h5>
+                <p>Figma, Adobe XD, Canva</p>
+              </div>
+              <div class="tool-category">
+                <h5><i class="fas fa-tasks"></i> Project Management</h5>
+                <p>Trello, Notion, Slack, Discord</p>
+              </div>
+              <div class="tool-category">
+                <h5><i class="fas fa-server"></i> Deployment</h5>
+                <p>Vercel, Netlify, GitHub Pages</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-cta">
+            <h4>Let's collaborate!</h4>
+            <p>I'm ready to bring this structured, professional approach to your next project.</p>
+            <div class="cta-buttons">
+              <a href="https://wa.link/bnq8hy" target="_blank" class="cta-btn primary">
+                <i class="fab fa-whatsapp"></i>
+                Start a Conversation
+              </a>
+              <a href="mailto:ekaetteedidiong0@gmail.com" class="cta-btn secondary">
+                <i class="fas fa-envelope"></i>
+                Send Email
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
 
 <!-----Projects------>
 

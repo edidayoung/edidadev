@@ -37,21 +37,53 @@ if (menuIcon && closeIcon && navLinks) {
     });
 }
 
-// 3D Card Flip Functionality
+// Bio Modal Functionality
 document.addEventListener('DOMContentLoaded', function() {
-    const cards = document.querySelectorAll('.bio-card');
+    const bioCards = document.querySelectorAll('.bio-card');
+    const modals = document.querySelectorAll('.bio-modal');
+    const modalCloses = document.querySelectorAll('.modal-close');
     
-    cards.forEach(card => {
-        card.addEventListener('click', function(e) {
-            e.stopPropagation();
-            this.classList.toggle('flipped');
+    // Open modal when card is clicked
+    bioCards.forEach(card => {
+        card.addEventListener('click', function() {
+            const modalId = this.getAttribute('data-modal');
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.classList.add('active');
+                document.body.style.overflow = 'hidden'; // Prevent background scrolling
+            }
         });
     });
     
-    document.addEventListener('click', function(e) {
-        if (!e.target.closest('.bio-card')) {
-            cards.forEach(card => {
-                card.classList.remove('flipped');
+    // Close modal when close button is clicked
+    modalCloses.forEach(closeBtn => {
+        closeBtn.addEventListener('click', function() {
+            const modal = this.closest('.bio-modal');
+            if (modal) {
+                modal.classList.remove('active');
+                document.body.style.overflow = ''; // Restore scrolling
+            }
+        });
+    });
+    
+    // Close modal when clicking outside the modal content
+    modals.forEach(modal => {
+        modal.addEventListener('click', function(e) {
+            if (e.target === this) {
+                this.classList.remove('active');
+                document.body.style.overflow = ''; // Restore scrolling
+            }
+        });
+    });
+    
+    // Close modal with Escape key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            modals.forEach(modal => {
+                if (modal.classList.contains('active')) {
+                    modal.classList.remove('active');
+                    document.body.style.overflow = ''; // Restore scrolling
+                }
             });
         }
     });
