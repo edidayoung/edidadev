@@ -147,6 +147,14 @@ document.addEventListener('DOMContentLoaded', function() {
   const filterButtons = document.querySelectorAll('.skill-filter-btn');
   const skillCards = document.querySelectorAll('.skill-card');
   
+  // Filter skills on initial page load to show only frontend
+  skillCards.forEach(card => {
+    const category = card.getAttribute('data-category');
+    if (category !== 'frontend') {
+      card.classList.add('hidden');
+    }
+  });
+  
   filterButtons.forEach(button => {
     button.addEventListener('click', function() {
       const filter = this.getAttribute('data-filter');

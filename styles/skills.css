@@ -204,6 +204,35 @@
   color: var(--primary-color);
 }
 
+/* Soft Skills - Individual Colors */
+.skill-card[data-category="soft"] .fa-puzzle-piece {
+  color: #FF6B6B; /* Problem Solving - Red */
+}
+
+.skill-card[data-category="soft"] .fa-graduation-cap {
+  color: #4ECDC4; /* Self-Teaching - Teal */
+}
+
+.skill-card[data-category="soft"] .fa-comments {
+  color: #45B7D1; /* Communication - Blue */
+}
+
+.skill-card[data-category="soft"] .fa-lightbulb {
+  color: #FFA502; /* Creativity - Orange */
+}
+
+.skill-card[data-category="soft"] .fa-calendar-check {
+  color: #26DE81; /* Consistency - Green */
+}
+
+.skill-card[data-category="soft"] .fa-bolt {
+  color: #FD79A8; /* Fast Execution - Pink */
+}
+
+.skill-card[data-category="soft"] .fa-sync-alt {
+  color: #A29BFE; /* Adaptability - Purple */
+}
+
 .skill-card h3 {
   font-size: 1rem;
   color: var(--text-light);
