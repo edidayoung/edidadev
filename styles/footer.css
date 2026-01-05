@@ -2,7 +2,7 @@
 .footer-section {
   background: var(--bg-darker);
   padding: 3rem 5% 1.5rem;
-  border-top: 1px solid rgba(255, 235, 59, 0.2);
+  border-top: 1px solid rgba(201, 169, 97, 0.2);
   position: relative;
 }
 
@@ -143,8 +143,8 @@
 .social-link {
   width: 40px;
   height: 40px;
-  background: rgba(255, 235, 59, 0.1);
-  border: 1px solid rgba(255, 235, 59, 0.2);
+  background: rgba(201, 169, 97, 0.08);
+  border: 1px solid rgba(201, 169, 97, 0.2);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -159,7 +159,7 @@
   background: var(--primary-color);
   color: var(--bg-dark);
   transform: translateY(-3px);
-  box-shadow: 0 5px 15px var(--primary-glow);
+  box-shadow: 0 5px 15px rgba(201, 169, 97, 0.25);
 }
 
 .social-cta {
@@ -170,7 +170,7 @@
 
 /* Footer Bottom */
 .footer-bottom {
-  border-top: 1px solid rgba(255, 235, 59, 0.1);
+  border-top: 1px solid rgba(201, 169, 97, 0.15);
   padding-top: 1.5rem;
   display: flex;
   justify-content: space-between;
@@ -202,7 +202,7 @@
   justify-content: center;
   font-size: 1.2rem;
   cursor: pointer;
-  box-shadow: 0 4px 15px var(--primary-glow);
+  box-shadow: 0 4px 15px rgba(201, 169, 97, 0.25);
   transition: all 0.3s ease;
   opacity: 0;
   visibility: hidden;
@@ -216,7 +216,7 @@
 
 .back-to-top:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 25px var(--primary-glow);
+  box-shadow: 0 8px 25px rgba(201, 169, 97, 0.35);
 }
 
 /* Tablet Responsive */
@@ -331,10 +331,10 @@
 
 @keyframes textGlow {
   0%, 100% {
-    text-shadow: 0 0 5px var(--primary-glow);
+    text-shadow: 0 0 5px rgba(201, 169, 97, 0.3);
   }
   50% {
-    text-shadow: 0 0 8px var(--primary-glow);
+    text-shadow: 0 0 8px rgba(201, 169, 97, 0.4);
   }
 }
 

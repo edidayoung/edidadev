@@ -13,8 +13,8 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(circle at 20% 50%, rgba(255, 235, 59, 0.05) 0%, transparent 50%),
-              radial-gradient(circle at 80% 50%, rgba(255, 235, 59, 0.05) 0%, transparent 50%);
+  background: radial-gradient(circle at 20% 50%, rgba(201, 169, 97, 0.04) 0%, transparent 50%),
+              radial-gradient(circle at 80% 50%, rgba(201, 169, 97, 0.04) 0%, transparent 50%);
   pointer-events: none;
 }
 
@@ -56,7 +56,7 @@
 /* Individual Card */
 .bio-card {
   background: linear-gradient(135deg, var(--card-bg) 0%, var(--bg-darker) 100%);
-  border: 2px solid rgba(255, 235, 59, 0.2);
+  border: 2px solid rgba(201, 169, 97, 0.2);
   border-radius: 20px;
   padding: 2.5rem 2rem;
   text-align: center;
@@ -91,7 +91,7 @@
 .bio-card:hover {
   transform: translateY(-10px);
   border-color: var(--primary-color);
-  box-shadow: 0 20px 40px var(--primary-glow);
+  box-shadow: 0 20px 40px rgba(201, 169, 97, 0.25);
 }
 
 .bio-card > * {
@@ -205,7 +205,7 @@
   overflow-y: auto;
   position: relative;
   animation: slideUp 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  box-shadow: 0 20px 60px rgba(255, 235, 59, 0.3);
+  box-shadow: 0 20px 60px rgba(201, 169, 97, 0.25);
 }
 
 .modal-close {
@@ -261,7 +261,7 @@
   text-align: center;
   margin-bottom: 2rem;
   padding-bottom: 2rem;
-  border-bottom: 2px solid rgba(255, 235, 59, 0.2);
+  border-bottom: 2px solid rgba(201, 169, 97, 0.2);
 }
 
 .modal-intro h3 {
@@ -300,8 +300,8 @@
 }
 
 .modal-stat {
-  background: rgba(255, 235, 59, 0.1);
-  border: 2px solid rgba(255, 235, 59, 0.3);
+  background: rgba(201, 169, 97, 0.08);
+  border: 2px solid rgba(201, 169, 97, 0.25);
   border-radius: 15px;
   padding: 1.2rem;
   text-align: center;
@@ -334,9 +334,9 @@
   align-items: center;
   gap: 2rem;
   padding: 1.5rem;
-  background: rgba(255, 235, 59, 0.05);
+  background: rgba(201, 169, 97, 0.04);
   border-radius: 15px;
-  border: 2px solid rgba(255, 235, 59, 0.2);
+  border: 2px solid rgba(201, 169, 97, 0.2);
 }
 
 .profile-image-wrapper {
@@ -350,13 +350,13 @@
   border-radius: 50%;
   object-fit: cover;
   border: 4px solid var(--primary-color);
-  box-shadow: 0 10px 30px rgba(255, 235, 59, 0.3);
+  box-shadow: 0 10px 30px rgba(201, 169, 97, 0.25);
   transition: all 0.3s ease;
 }
 
 .profile-image:hover {
   transform: scale(1.05);
-  box-shadow: 0 15px 40px rgba(255, 235, 59, 0.5);
+  box-shadow: 0 15px 40px rgba(201, 169, 97, 0.4);
 }
 
 .profile-badge {
@@ -410,8 +410,8 @@
   align-items: center;
   gap: 1.5rem;
   padding: 1.5rem;
-  background: rgba(255, 235, 59, 0.05);
-  border: 2px solid rgba(255, 235, 59, 0.3);
+  background: rgba(201, 169, 97, 0.04);
+  border: 2px solid rgba(201, 169, 97, 0.25);
   border-radius: 15px;
   margin-bottom: 1.8rem;
 }
@@ -427,13 +427,13 @@
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid var(--primary-color);
-  box-shadow: 0 8px 25px rgba(255, 235, 59, 0.4);
+  box-shadow: 0 8px 25px rgba(201, 169, 97, 0.3);
   transition: all 0.3s ease;
 }
 
 .profile-img:hover {
   transform: scale(1.05);
-  box-shadow: 0 12px 35px rgba(255, 235, 59, 0.6);
+  box-shadow: 0 12px 35px rgba(201, 169, 97, 0.5);
 }
 
 .verified-badge {
@@ -487,10 +487,10 @@
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  background: rgba(255, 235, 59, 0.1);
+  background: rgba(201, 169, 97, 0.08);
   padding: 0.4rem 0.9rem;
   border-radius: 20px;
-  border: 1px solid rgba(255, 235, 59, 0.3);
+  border: 1px solid rgba(201, 169, 97, 0.25);
   color: var(--text-gray);
   font-size: 0.9rem;
 }
@@ -514,7 +514,7 @@
   align-items: center;
   gap: 0.5rem;
   padding-bottom: 0.7rem;
-  border-bottom: 2px solid rgba(255, 235, 59, 0.2);
+  border-bottom: 2px solid rgba(201, 169, 97, 0.2);
 }
 
 .section-heading i {
@@ -534,7 +534,7 @@
   align-items: center;
   gap: 0.8rem;
   padding: 0.8rem;
-  background: rgba(255, 235, 59, 0.05);
+  background: rgba(201, 169, 97, 0.04);
   border-radius: 8px;
   border-left: 3px solid var(--primary-color);
   transition: all 0.3s ease;
@@ -543,7 +543,7 @@
 }
 
 .facts-list li:hover {
-  background: rgba(255, 235, 59, 0.1);
+  background: rgba(201, 169, 97, 0.08);
   transform: translateX(5px);
 }
 
@@ -611,8 +611,8 @@
 }
 
 .timeline-tags span {
-  background: rgba(255, 235, 59, 0.1);
-  border: 1px solid rgba(255, 235, 59, 0.3);
+  background: rgba(201, 169, 97, 0.08);
+  border: 1px solid rgba(201, 169, 97, 0.25);
   color: var(--primary-color);
   padding: 0.3rem 0.8rem;
   border-radius: 15px;
@@ -628,8 +628,8 @@
 }
 
 .service-item {
-  background: rgba(255, 235, 59, 0.05);
-  border: 2px solid rgba(255, 235, 59, 0.2);
+  background: rgba(201, 169, 97, 0.04);
+  border: 2px solid rgba(201, 169, 97, 0.2);
   border-radius: 15px;
   padding: 1.5rem;
   transition: all 0.3s ease;
@@ -638,7 +638,7 @@
 .service-item:hover {
   border-color: var(--primary-color);
   transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(255, 235, 59, 0.2);
+  box-shadow: 0 10px 30px rgba(201, 169, 97, 0.2);
 }
 
 .service-icon {
@@ -669,7 +669,7 @@
 }
 
 .service-tech li {
-  background: rgba(255, 235, 59, 0.1);
+  background: rgba(201, 169, 97, 0.08);
   color: var(--primary-color);
   padding: 0.3rem 0.7rem;
   border-radius: 12px;
@@ -719,8 +719,8 @@
 }
 
 .why-hire-item {
-  background: rgba(255, 235, 59, 0.05);
-  border: 2px solid rgba(255, 235, 59, 0.2);
+  background: rgba(201, 169, 97, 0.04);
+  border: 2px solid rgba(201, 169, 97, 0.2);
   border-radius: 15px;
   padding: 1.5rem;
   text-align: center;
@@ -730,7 +730,7 @@
 .why-hire-item:hover {
   border-color: var(--primary-color);
   transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(255, 235, 59, 0.2);
+  box-shadow: 0 10px 30px rgba(201, 169, 97, 0.2);
 }
 
 .why-icon {
@@ -753,7 +753,7 @@
 
 /* Modal CTA */
 .modal-cta {
-  background: linear-gradient(135deg, rgba(255, 235, 59, 0.1) 0%, rgba(255, 235, 59, 0.05) 100%);
+  background: linear-gradient(135deg, rgba(201, 169, 97, 0.08) 0%, rgba(201, 169, 97, 0.04) 100%);
   border: 2px solid var(--primary-color);
   border-radius: 15px;
   padding: 2rem;
@@ -798,9 +798,9 @@
 }
 
 .cta-btn.primary:hover {
-  background: var(--text-light);
+  background: var(--primary-dark);
   transform: translateY(-3px);
-  box-shadow: 0 10px 30px var(--primary-glow);
+  box-shadow: 0 10px 30px rgba(201, 169, 97, 0.35);
 }
 
 .cta-btn.secondary {
@@ -1213,14 +1213,14 @@
   gap: 1.5rem;
   align-items: flex-start;
   padding: 1.5rem;
-  background: rgba(255, 235, 59, 0.05);
+  background: rgba(201, 169, 97, 0.04);
   border-left: 4px solid var(--primary-color);
   border-radius: 10px;
   transition: all 0.3s ease;
 }
 
 .process-step:hover {
-  background: rgba(255, 235, 59, 0.1);
+  background: rgba(201, 169, 97, 0.08);
   transform: translateX(5px);
 }
 
@@ -1233,7 +1233,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(255, 235, 59, 0.1);
+  background: rgba(201, 169, 97, 0.08);
   border: 2px solid var(--primary-color);
   border-radius: 50%;
   flex-shrink: 0;
@@ -1271,20 +1271,20 @@
 }
 
 .step-tools span {
-  background: rgba(255, 235, 59, 0.1);
+  background: rgba(201, 169, 97, 0.08);
   color: var(--primary-color);
   padding: 0.3rem 0.8rem;
   border-radius: 12px;
   font-size: 0.8rem;
   font-weight: 600;
-  border: 1px solid rgba(255, 235, 59, 0.3);
+  border: 1px solid rgba(201, 169, 97, 0.25);
 }
 
 /* Work Style Section */
 .work-style-section {
   margin-top: 3rem;
   padding-top: 2rem;
-  border-top: 2px solid rgba(255, 235, 59, 0.2);
+  border-top: 2px solid rgba(201, 169, 97, 0.2);
 }
 
 .work-style-section h4 {
@@ -1303,8 +1303,8 @@
 .work-style-item {
   text-align: center;
   padding: 1.5rem;
-  background: rgba(255, 235, 59, 0.05);
-  border: 2px solid rgba(255, 235, 59, 0.2);
+  background: rgba(201, 169, 97, 0.04);
+  border: 2px solid rgba(201, 169, 97, 0.2);
   border-radius: 15px;
   transition: all 0.3s ease;
 }
@@ -1312,7 +1312,7 @@
 .work-style-item:hover {
   border-color: var(--primary-color);
   transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(255, 235, 59, 0.2);
+  box-shadow: 0 10px 30px rgba(201, 169, 97, 0.2);
 }
 
 .work-style-item i {
@@ -1338,7 +1338,7 @@
 .tools-section {
   margin-top: 3rem;
   padding-top: 2rem;
-  border-top: 2px solid rgba(255, 235, 59, 0.2);
+  border-top: 2px solid rgba(201, 169, 97, 0.2);
 }
 
 .tools-section h4 {
@@ -1356,9 +1356,9 @@
 
 .tool-category {
   padding: 1.5rem;
-  background: rgba(255, 235, 59, 0.05);
+  background: rgba(201, 169, 97, 0.04);
   border-radius: 15px;
-  border: 2px solid rgba(255, 235, 59, 0.2);
+  border: 2px solid rgba(201, 169, 97, 0.2);
   transition: all 0.3s ease;
 }
 

@@ -7,22 +7,22 @@
 }
 
 :root {
-  /* Color Palette - Yellow & Dark Theme */
-  --primary-color: #FFEB3B;
-  --primary-dark: #FBC02D;
-  --primary-light: #FFF9C4;
-  --primary-glow: rgba(255, 235, 59, 0.3);
-  --bg-dark: #121212;
-  --bg-darker: #0A0A0A;
-  --card-bg: #1E1E1E;
-  --card-hover: #2A2A2A;
-  --text-light: #FFFFFF;
-  --text-gray: #B0B0B0;
-  --text-yellow: #FFEB3B;
+  /* Color Palette - Slate & Gold Theme */
+  --primary-color: #C9A961;
+  --primary-dark: #B8860B;
+  --primary-light: #D4BC7A;
+  --primary-glow: rgba(201, 169, 97, 0.25);
+  --bg-dark: #0D0D0D;
+  --bg-darker: #181818;
+  --card-bg: #1A1A1A;
+  --card-hover: #242424;
+  --text-light: #E8E8E8;
+  --text-gray: #A0A0A0;
+  --text-gold: #C9A961;
   
   /* Effects & Layout */
-  --shadow-md: 0 4px 20px rgba(255, 235, 59, 0.2);
-  --shadow-lg: 0 8px 30px rgba(255, 235, 59, 0.3);
+  --shadow-md: 0 4px 20px rgba(201, 169, 97, 0.15);
+  --shadow-lg: 0 8px 30px rgba(201, 169, 97, 0.2);
   --border-radius: 12px;
 }
 
@@ -108,7 +108,7 @@ nav {
 
 .nav-links a:hover {
   color: var(--primary-color);
-  background: rgba(255, 235, 59, 0.1);
+  background: rgba(201, 169, 97, 0.1);
 }
 
 /* ===== HERO SECTION ===== */
@@ -186,12 +186,12 @@ nav {
 .btn-resume {
   background: var(--primary-color);
   color: var(--bg-dark);
-  box-shadow: 0 5px 20px rgba(255, 235, 59, 0.3);
+  box-shadow: 0 5px 20px rgba(201, 169, 97, 0.25);
 }
 
 .btn-resume:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 30px rgba(255, 235, 59, 0.4);
+  box-shadow: 0 10px 30px rgba(201, 169, 97, 0.35);
 }
 
 .btn-talk {
@@ -211,7 +211,7 @@ nav {
   gap: 1.5rem;
   margin-top: 1.5rem;
   padding-top: 1.5rem;
-  border-top: 1px solid rgba(255, 235, 59, 0.2);
+  border-top: 1px solid rgba(201, 169, 97, 0.2);
 }
 
 .stat-item {
@@ -268,7 +268,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 0 40px rgba(255, 235, 59, 0.6);
+  box-shadow: 0 0 40px rgba(201, 169, 97, 0.5);
   z-index: 10;
   animation: hubPulse 3s ease-in-out infinite;
 }
@@ -318,7 +318,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 5px 20px rgba(255, 235, 59, 0.3);
+  box-shadow: 0 5px 20px rgba(201, 169, 97, 0.25);
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -332,7 +332,7 @@ nav {
 .orbit-icon:hover {
   transform: scale(1.2);
   background: var(--primary-color);
-  box-shadow: 0 8px 30px rgba(255, 235, 59, 0.6);
+  box-shadow: 0 8px 30px rgba(201, 169, 97, 0.5);
 }
 
 .orbit-icon:hover i {
@@ -611,11 +611,11 @@ nav {
 @keyframes hubPulse {
   0%, 100% {
     transform: translate(-50%, -50%) scale(1);
-    box-shadow: 0 0 40px rgba(255, 235, 59, 0.6);
+    box-shadow: 0 0 40px rgba(201, 169, 97, 0.5);
   }
   50% {
     transform: translate(-50%, -50%) scale(1.1);
-    box-shadow: 0 0 60px rgba(255, 235, 59, 0.8);
+    box-shadow: 0 0 60px rgba(201, 169, 97, 0.6);
   }
 }
 
