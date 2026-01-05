@@ -83,11 +83,16 @@
   background: var(--bg-darker);
   border: 1px solid rgba(201, 169, 97, 0.15);
   border-radius: 12px;
-  padding: 1.2rem;
+  padding: 1.5rem 1.2rem;
   text-align: center;
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
 }
 
 .skill-card::before {
@@ -118,38 +123,103 @@
 
 .skill-card-icon {
   font-size: 2.5rem;
-  color: var(--primary-color);
   margin-bottom: 0.8rem;
+}
+
+/* Brand Colors for Skill Icons */
+.skill-card[data-category="frontend"] .fa-html5 {
+  color: #E34F26; /* HTML5 Orange */
+}
+
+.skill-card[data-category="frontend"] .fa-css3-alt {
+  color: #1572B6; /* CSS3 Blue */
+}
+
+.skill-card[data-category="frontend"] .fa-js-square {
+  color: #F7DF1E; /* JavaScript Yellow */
+}
+
+.skill-card[data-category="frontend"] .fa-react {
+  color: #61DAFB; /* React Cyan */
+}
+
+.skill-card[data-category="frontend"] .fa-wind {
+  color: #06B6D4; /* Tailwind CSS */
+}
+
+.skill-card[data-category="frontend"] .fa-bootstrap {
+  color: #7952B3; /* Bootstrap Purple */
+}
+
+.skill-card[data-category="frontend"] .fa-sass {
+  color: #CC6699; /* Sass Pink */
+}
+
+.skill-card[data-category="backend"] .fa-node-js {
+  color: #339933; /* Node.js Green */
+}
+
+.skill-card[data-category="backend"] .fa-python {
+  color: #3776AB; /* Python Blue */
+}
+
+.skill-card[data-category="backend"] .fa-database {
+  color: #4479A1; /* Database Blue */
+}
+
+.skill-card[data-category="backend"] .fa-fire {
+  color: #FFCA28; /* Firebase Yellow */
+}
+
+.skill-card[data-category="tools"] .fa-git-alt {
+  color: #F05032; /* Git Orange */
+}
+
+.skill-card[data-category="tools"] .fa-github {
+  color: #FFFFFF; /* GitHub White */
+}
+
+.skill-card[data-category="tools"] .fa-figma {
+  color: #F24E1E; /* Figma Red */
+}
+
+.skill-card[data-category="tools"] .fa-npm {
+  color: #CB3837; /* NPM Red */
+}
+
+.skill-card[data-category="tools"] .fa-code-branch {
+  color: #F05032; /* Version Control Orange */
+}
+
+.skill-card[data-category="tools"] .fa-terminal {
+  color: #4EAA25; /* Terminal Green */
+}
+
+.skill-card[data-category="tools"] .fa-rocket {
+  color: #00C7B7; /* Deployment Teal */
+}
+
+/* Soft Skills - Keep gold theme */
+.skill-card[data-category="soft"] .skill-card-icon {
+  color: var(--primary-color);
 }
 
 .skill-card h3 {
   font-size: 1rem;
   color: var(--text-light);
-  margin-bottom: 0.8rem;
+  margin: 0;
 }
 
 .skill-level {
-  width: 100%;
-  height: 6px;
-  background: rgba(201, 169, 97, 0.12);
-  border-radius: 10px;
-  overflow: hidden;
-  margin-bottom: 0.5rem;
+  display: none;
 }
 
 .skill-level-bar {
-  height: 100%;
-  background: linear-gradient(90deg, var(--primary-color), var(--primary-dark));
-  border-radius: 10px;
-  transition: width 1s ease;
-  box-shadow: 0 0 10px rgba(201, 169, 97, 0.3);
+  display: none;
 }
 
 .skill-percentage {
-  display: block;
-  font-size: 0.95rem;
-  font-weight: 600;
-  color: var(--primary-color);
+  display: none;
 }
 
 /* Tablet Responsive */
@@ -262,40 +332,6 @@
   }
 }
 
-/* Skill Description - Hidden by default, shown on hover */
 .skill-description {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(10, 10, 10, 0.98);
-  color: var(--text-gray);
-  font-size: 0.85rem;
-  line-height: 1.5;
-  padding: 1.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.3s ease;
-  border-radius: 12px;
-  border: 1px solid var(--primary-color);
-  z-index: 10;
-}
-
-/* Desktop: Show on hover */
-@media (hover: hover) and (pointer: fine) {
-  .skill-card:hover .skill-description {
-    opacity: 1;
-    pointer-events: auto;
-  }
-}
-
-/* Mobile/Touch: Show on click/active state only */
-.skill-card.active .skill-description {
-  opacity: 1;
-  pointer-events: auto;
+  display: none;
 }
